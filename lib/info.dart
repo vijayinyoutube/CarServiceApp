@@ -440,7 +440,7 @@ class _RentPageState extends State<RentPage> {
                                 ),
                               ),
                             ),
-                            itemcake(),
+                            toyotacar(),
                           ],
                         ),
                       ),
@@ -512,7 +512,7 @@ class _RentPageState extends State<RentPage> {
   }
 }
 
-Widget itemcake() {
+Widget toyotacar() {
   return Container(
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,

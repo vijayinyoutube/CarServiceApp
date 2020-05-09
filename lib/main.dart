@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:youtube/info.dart';
 
 void main() => runApp(MyApp());
 
@@ -41,14 +42,14 @@ class _MyPageState extends State<MyPage> {
               Text(
                 "Rent or",
                 style: TextStyle(
-                    color: Colors.black,
+                    foreground: Paint()..shader = linearGradient2,
                     fontSize: 35,
                     fontWeight: FontWeight.bold),
               ),
               Text(
                 "Service your Car",
                 style: TextStyle(
-                    color: Colors.black,
+                    foreground: Paint()..shader = linearGradient1,
                     fontSize: 35,
                     fontWeight: FontWeight.bold),
               ),
@@ -71,21 +72,28 @@ class _MyPageState extends State<MyPage> {
                 ],
               ),
               Image.asset(
-                "assets/carmoving.gif",
+                "assets/carmovingcolor.gif",
                 fit: BoxFit.cover,
                 width: double.infinity,
               ),
               Container(
-                decoration: new BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: new BorderRadius.circular(10)),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(23.0),
+                  gradient: LinearGradient(colors: [
+                    Color(0xFFFF1000),
+                    Color(0xFF2508FF),
+                  ], begin: Alignment.centerRight, end: Alignment.centerLeft),
+                ),
                 height: 50,
                 width: MediaQuery.of(context).size.width,
                 child: RaisedButton(
                   elevation: 0,
-                  // shape: RoundedRectangleBorder(
-                  //     borderRadius: BorderRadius.circular(10)),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => RentPage()),
+                    );
+                  },
                   color: Colors.transparent,
                   child: Text(
                     "Get Started",
@@ -103,3 +111,10 @@ class _MyPageState extends State<MyPage> {
     );
   }
 }
+
+final Shader linearGradient1 = LinearGradient(
+  colors: <Color>[Color(0xFFFF1000), Color(0xFF2508FF)],
+).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));
+final Shader linearGradient2 = LinearGradient(
+  colors: <Color>[Color(0xFF2508FF), Color(0xFFFF1000)],
+).createShader(Rect.fromLTWH(0.0, 0.0, 200.0, 70.0));

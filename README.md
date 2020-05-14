@@ -7,9 +7,9 @@ The app also focuses on UI & UX as well as incorporating state of the art techno
 
 Check out the video tutorial for this app
 
-:oncoming_automobile:   > Part-1: https://youtu.be/gdx3HJR8cSA    
-
-:oncoming_automobile:   > Part-2: https://youtu.be/_hxWjiHYpyU     
+> Part-1: https://youtu.be/gdx3HJR8cSA      :oncoming_automobile:
+ 
+> Part-2: https://youtu.be/_hxWjiHYpyU      :oncoming_automobile:  
 
 
 Visit my Channel for more : :point_right: [vijaycreations](https://www.youtube.com/channel/UCBC_Z7jla1GSITcqLKAtPxQ)

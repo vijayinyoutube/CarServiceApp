@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gradient_text/gradient_text.dart';
+import 'package:youtube/detailspage.dart';
 
 class RentPage extends StatefulWidget {
   @override
@@ -62,71 +63,85 @@ class _RentPageState extends State<RentPage> {
                         borderRadius: new BorderRadius.circular(10)),
                     height: 175,
                     width: 125,
-                    child: Card(
-                      color: Colors.transparent,
-                      elevation: 0,
-                      child: Column(
-                        children: <Widget>[
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => DetailsPage()),
+                        );
+                      },
+                      child: Hero(
+                        tag: "bmwcar",
+                        child: Card(
+                          color: Colors.transparent,
+                          elevation: 0,
+                          child: Column(
                             children: <Widget>[
-                              Text(
-                                "BMW",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.bold),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: <Widget>[
+                                  Text(
+                                    "BMW",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Image.asset(
+                                    "assets/bmw.png",
+                                    fit: BoxFit.contain,
+                                    height: 40,
+                                    width: 50,
+                                    // width: double.infinity,
+                                  ),
+                                ],
                               ),
                               Image.asset(
-                                "assets/bmw.png",
+                                "assets/bmwcar_card.png",
                                 fit: BoxFit.contain,
-                                height: 40,
-                                width: 50,
+                                height: 75,
+                                width: 155,
                                 // width: double.infinity,
                               ),
-                            ],
-                          ),
-                          Image.asset(
-                            "assets/bmwcar_card.png",
-                            fit: BoxFit.contain,
-                            height: 75,
-                            width: 155,
-                            // width: double.infinity,
-                          ),
-                          Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: <Widget>[
-                              Text(
-                                "All Series",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.bold),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: <Widget>[
+                                  Text(
+                                    "All Series",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                  Text(
+                                    "\$35",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ],
                               ),
-                              Text(
-                                "\$35",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 15,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: <Widget>[
-                              Text(
-                                "per day",
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.normal),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                children: <Widget>[
+                                  Text(
+                                    "per day",
+                                    style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.normal),
+                                  ),
+                                ],
                               ),
                             ],
                           ),
-                        ],
+                        ),
                       ),
                     ),
                   ),

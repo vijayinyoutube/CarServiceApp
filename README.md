@@ -9,7 +9,9 @@ Check out the video tutorial for this app
 
 > Part-1: https://youtu.be/gdx3HJR8cSA   :oncoming_automobile:    
  
-> Part-2: https://youtu.be/_hxWjiHYpyU   :oncoming_automobile:           
+> Part-2: https://youtu.be/_hxWjiHYpyU   :oncoming_automobile: 
+
+> Part-3: https://youtu.be/iJG6RTPhsfI   :oncoming_automobile:          
 
 
 Visit my Channel for more : :point_right: [vijaycreations](https://www.youtube.com/channel/UCBC_Z7jla1GSITcqLKAtPxQ)

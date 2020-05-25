@@ -30,7 +30,6 @@ class _RentPageState extends State<RentPage> {
                 gradient: LinearGradient(colors: [
                   Color(0xFFFF1000),
                   Color(0xFF2508FF),
-                  // Colors.deepOrange,
                 ]),
                 style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center),
@@ -66,10 +65,9 @@ class _RentPageState extends State<RentPage> {
                     child: GestureDetector(
                       onTap: () {
                         Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => DetailsPage()),
-                        );
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => DetailsPage()));
                       },
                       child: Hero(
                         tag: "bmwcar",
@@ -95,7 +93,6 @@ class _RentPageState extends State<RentPage> {
                                     fit: BoxFit.contain,
                                     height: 40,
                                     width: 50,
-                                    // width: double.infinity,
                                   ),
                                 ],
                               ),
@@ -104,7 +101,6 @@ class _RentPageState extends State<RentPage> {
                                 fit: BoxFit.contain,
                                 height: 75,
                                 width: 155,
-                                // width: double.infinity,
                               ),
                               Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -429,95 +425,101 @@ class _RentPageState extends State<RentPage> {
             SizedBox(
               height: 5,
             ),
-            Expanded(
-              child: ListView(
-                scrollDirection: Axis.vertical,
-                children: <Widget>[
-                  FittedBox(
-                    child: GestureDetector(
-                      onTap: () {},
-                      child: Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
-                        elevation: 5,
-                        child: Row(
-                          children: <Widget>[
-                            Container(
-                              width: 90,
-                              height: 60,
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(15.0),
-                                child: Image(
-                                  fit: BoxFit.contain,
-                                  alignment: Alignment.center,
-                                  image: AssetImage('assets/toyota.webp'),
-                                ),
-                              ),
+            SingleChildScrollView(
+              child: Container(
+                height: MediaQuery.of(context).size.height * 0.42,
+                child: Expanded(
+                  child: ListView(
+                    scrollDirection: Axis.vertical,
+                    children: <Widget>[
+                      FittedBox(
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15.0),
                             ),
-                            toyotacar(),
-                          ],
+                            elevation: 5,
+                            child: Row(
+                              children: <Widget>[
+                                Container(
+                                  width: 90,
+                                  height: 60,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(15.0),
+                                    child: Image(
+                                      fit: BoxFit.contain,
+                                      alignment: Alignment.center,
+                                      image: AssetImage('assets/toyota.webp'),
+                                    ),
+                                  ),
+                                ),
+                                toyotacar(),
+                              ],
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ),
-                  FittedBox(
-                    child: GestureDetector(
-                      onTap: () {},
-                      child: Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
-                        elevation: 5,
-                        child: Row(
-                          children: <Widget>[
-                            Container(
-                              width: 90,
-                              height: 60,
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(15.0),
-                                child: Image(
-                                  fit: BoxFit.contain,
-                                  alignment: Alignment.center,
-                                  image: AssetImage('assets/hundai.png'),
-                                ),
-                              ),
+                      FittedBox(
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15.0),
                             ),
-                            hundaicar(),
-                          ],
+                            elevation: 5,
+                            child: Row(
+                              children: <Widget>[
+                                Container(
+                                  width: 90,
+                                  height: 60,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(15.0),
+                                    child: Image(
+                                      fit: BoxFit.contain,
+                                      alignment: Alignment.center,
+                                      image: AssetImage('assets/hundai.png'),
+                                    ),
+                                  ),
+                                ),
+                                hundaicar(),
+                              ],
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ),
-                  FittedBox(
-                    child: GestureDetector(
-                      onTap: () {},
-                      child: Card(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
-                        elevation: 5,
-                        child: Row(
-                          children: <Widget>[
-                            Container(
-                              width: 90,
-                              height: 60,
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(15.0),
-                                child: Image(
-                                  fit: BoxFit.contain,
-                                  alignment: Alignment.center,
-                                  image: AssetImage('assets/volkswagen.png'),
-                                ),
-                              ),
+                      FittedBox(
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Card(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15.0),
                             ),
-                            volkswagencar(),
-                          ],
+                            elevation: 5,
+                            child: Row(
+                              children: <Widget>[
+                                Container(
+                                  width: 90,
+                                  height: 60,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(15.0),
+                                    child: Image(
+                                      fit: BoxFit.contain,
+                                      alignment: Alignment.center,
+                                      image:
+                                          AssetImage('assets/volkswagen.png'),
+                                    ),
+                                  ),
+                                ),
+                                volkswagencar(),
+                              ],
+                            ),
+                          ),
                         ),
                       ),
-                    ),
+                    ],
                   ),
-                ],
+                ),
               ),
             ),
           ],

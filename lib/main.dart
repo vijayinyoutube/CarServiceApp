@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:youtube/info.dart';
+
+import 'package:youtube/select.dart';
 
 void main() => runApp(MyApp());
 
@@ -91,7 +92,7 @@ class _MyPageState extends State<MyPage> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => RentPage()),
+                      MaterialPageRoute(builder: (context) => SelectPage()),
                     );
                   },
                   color: Colors.transparent,

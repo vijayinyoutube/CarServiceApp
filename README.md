@@ -21,3 +21,20 @@ Visit my Channel for more : :point_right: [vijaycreations](https://www.youtube.c
 
 
 <image src="https://user-images.githubusercontent.com/58719230/81286873-68b28e00-907f-11ea-8c67-fa8ca0b8b748.gif" width="300" height="450"> <image src="https://user-images.githubusercontent.com/58719230/81474971-a7367d00-9226-11ea-9502-a3748f9b0721.png" width="300" height="450"> <image src="https://user-images.githubusercontent.com/58719230/81474955-89691800-9226-11ea-8ace-d4fe8f66ea59.png" width="300" height="450"> <image src="https://user-images.githubusercontent.com/58719230/82049593-3387ea80-96d4-11ea-981b-0866f48f94c1.png" width="300" height="450"> <image src="https://user-images.githubusercontent.com/58719230/82803269-dfcc8c80-9e9d-11ea-8ef9-4bdf7596f13e.png" width="300" height="450"> <image src="https://user-images.githubusercontent.com/58719230/82803448-2cb06300-9e9e-11ea-816d-ba63cd43859a.png" width="300" height="450">
+ 
+ ## License
+```
+   Copyright 2020 Vijay R
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+   ```

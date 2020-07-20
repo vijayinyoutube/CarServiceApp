@@ -1,5 +1,5 @@
 # CarServiceApp     :car:
-[![apache license](https://img.shields.io/badge/License-apache-blue.svg)](https://lbesson.mit-license.org/) [![Generic badge](https://img.shields.io/badge/Build-OK-<COLOR>.svg)](https://shields.io/)
+[![BUILD](https://img.shields.io/badge/Build-OK-<COLOR>.svg)](https://shields.io/) [![apache license](https://img.shields.io/badge/License-apache-blue.svg)](https://lbesson.mit-license.org/) [![vijaycreations](https://img.shields.io/website-up-vijaycreations-green-red/http/cv.lbesson.qc.to.svg)](https://www.youtube.com/channel/UCBC_Z7jla1GSITcqLKAtPxQ)
 ### A Flutter app that can be used for renting as well as servicing the cars
 
 We aim to develop the app in the perspective of providing intelligent and smart solution to the modern problem.
